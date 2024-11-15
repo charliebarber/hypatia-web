@@ -7,7 +7,7 @@
 <body>
   <div id="cesiumContainer" style="width: 100%; height:100%"></div>
   <script>
-    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5Njk0YTcwYS0xZjQ0LTQ0MDQtYWViYy04NzljZjVkZmRkYTYiLCJpZCI6MjUxODI3LCJpYXQiOjE3MzE1OTYwNTJ9.bYFPOMyCcQ-Lzl_uYQMZwidkVb3u9s7FdoJfrFBxTKw';
+    Cesium.Ion.defaultAccessToken = '';
     var viewer = new Cesium.Viewer('cesiumContainer', {
     skyBox : false,
     skyAtmosphere: false,
@@ -40,7 +40,7 @@ globe.baseColor = Cesium.Color.fromCssColorString('#f7fbff');
 
 var tonerLayer = globe.imageryLayers.addImageryProvider(
     Cesium.createOpenStreetMapImageryProvider({
-        url : 'https://stamen-tiles.a.ssl.fastly.net/toner-background/',
+        url : 'https://tiles.stadiamaps.com/tiles/stamen_toner_background/',
         credit : 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under CC BY SA.'
     })
 );
